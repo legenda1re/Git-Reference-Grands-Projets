@@ -57,16 +57,19 @@ git-reference/
 ## Structure du projet
 ```
 git-reference/
-│
-├── git-guide.html          # Application principale (tout-en-un)
-├── README.md               # Documentation du projet
-│
-└── (optionnel — extension future)
-    ├── assets/
-    │   ├── fonts/          # Polices locales si offline total requis
-    │   └── icons/          # Icônes personnalisées
-    └── scripts/
-        └── build.js        # Script de build si modularisation future
+├── git-guide.html          ← HTML pur (liens vers CSS + JS)
+├── README.md
+├── .gitignore
+├── assets/
+│   ├── style.css           ← Tout le CSS
+│   ├── fonts/
+│   │   ├── JetBrainsMono-Regular.woff2
+│   │   └── JetBrainsMono-Bold.woff2
+│   └── icons/
+│       └── favicon.svg
+└── scripts/
+    ├── app.js              ← Toute la logique JS + données
+    └── build.js            ← Script de validation
 ```
 
 > L'application est intentionnellement mono-fichier. Toute la logique
