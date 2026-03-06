@@ -4,7 +4,7 @@
  */
 
 /* ══════════════════════════════════════════════════════
-   THÈMES — 8 palettes dark soigneusement calibrées
+   THÈMES — 11 palettes (8 dark + 3 claires/mid-tone)
    Chaque thème définit ses couleurs bg/accent/gradient
    pour alimenter les swatches et le logo dynamique.
 ══════════════════════════════════════════════════════ */
@@ -65,6 +65,28 @@ const THEMES = [
     from:  "#6366F1",
     to:    "#4F46E5",
   },
+  // ── Thèmes clairs / mid-tone ───────────────────────
+  {
+    id:    "chalk",
+    name:  "Chalk",
+    bg:    "#F2F5F9",
+    from:  "#0057FF",
+    to:    "#7C3AED",
+  },
+  {
+    id:    "nordic",
+    name:  "Nordic",
+    bg:    "#2E3440",
+    from:  "#88C0D0",
+    to:    "#5E81AC",
+  },
+  {
+    id:    "parchment",
+    name:  "Parchment",
+    bg:    "#FDF6E3",
+    from:  "#2096A0",
+    to:    "#2E6EA6",
+  },
 ];
 
 /* ══════════════════════════════════════════════════════
@@ -80,6 +102,7 @@ const DATA = [
       { cmd: 'git config user.email "ton@email.com"', desc: "Configurer l'email" },
       { cmd: "git config --list", desc: "Voir toute la configuration" },
       { cmd: "git config --global core.editor nano", desc: "Changer l'éditeur par défaut" },
+      
     ]
   },
   {
